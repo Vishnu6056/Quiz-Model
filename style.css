@@ -1,0 +1,87 @@
+.mcq-container {
+    margin-bottom: 20px;
+  }
+  
+  .mcq-question {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .mcq-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .mcq-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .mcq-option input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    transition: all 0.3s;
+  }
+  
+  .mcq-option:hover input[type="radio"] {
+    border-color: #666;
+  }
+  
+  .mcq-option input[type="radio"]:checked {
+    background-color: #666;
+    border-color: #666;
+  }
+  
+  .mcq-option input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .submit-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #008CBA;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #006B8F;
+  }
+  
+  .result {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .result.correct {
+    color: green;
+  }
+  
+  .result.incorrect {
+    color: red;
+  }
+  body {
+    background-color: #39e8eb;
+  }
+    
+  .submit-btn:hover {
+    background-color: #006B8F;
+    color: #fff;
+    border: 2px solid #006B8F;
+  }
+  
